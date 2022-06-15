@@ -1,8 +1,9 @@
 import React from 'react';
-import {Easing} from 'react-native';
+import {Easing, NativeModules} from 'react-native';
 import PropTypes from 'prop-types';
 
-import MapboxGL from '../../index';
+// import MapboxGL from '../../index';
+const MapboxGL = {...NativeModules.MGLModule};
 import AnimatedPoint from '../../utils/AnimatedPoint';
 
 class Annotation extends React.Component {
