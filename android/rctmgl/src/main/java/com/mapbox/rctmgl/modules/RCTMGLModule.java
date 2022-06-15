@@ -283,6 +283,15 @@ public class RCTMGLModule extends ReactContextBaseJavaModule {
                 .put("LocationCallbackName", locationModuleCallbackNames)
                 .build();
     }
+    
+    @ReactMethod
+    public void addListener(String eventName) {
+    }
+
+    @ReactMethod
+    public void removeListeners(Integer count) {
+    }
+
 
     @ReactMethod
     public void initOkhttp(final String token){
