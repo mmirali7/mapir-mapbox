@@ -68,6 +68,15 @@ public class RCTMGLOfflineModule extends ReactContextBaseJavaModule {
     public String getName () {
         return REACT_CLASS;
     }
+    
+    @ReactMethod
+    public void addListener(String eventName) {
+    }
+
+    @ReactMethod
+    public void removeListeners(Integer count) {
+    }
+
 
     @ReactMethod
     public void createPack(ReadableMap options, final Promise promise) {
